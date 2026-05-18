@@ -1,4 +1,8 @@
-on: push # Trigger the workflow on push events to the main branc
+name: MyTerraform CI
+on: 
+  push: # Trigger the workflow on push events to the main branch
+    branches:
+      - main
 jobs:
   terraform:
     runs-on: ubuntu-22.04
